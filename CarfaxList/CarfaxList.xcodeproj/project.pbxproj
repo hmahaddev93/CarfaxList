@@ -13,6 +13,8 @@
 		15B6FA4B26B3DD3100BE570F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B6FA4A26B3DD3100BE570F /* Preview Assets.xcassets */; };
 		15B6FA5626B3DD3200BE570F /* CarfaxListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FA5526B3DD3200BE570F /* CarfaxListTests.swift */; };
 		15B6FA6126B3DD3200BE570F /* CarfaxListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FA6026B3DD3200BE570F /* CarfaxListUITests.swift */; };
+		15B6FA7226B3DF6200BE570F /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FA7126B3DF6200BE570F /* HTTPManager.swift */; };
+		15B6FA7426B3DFA300BE570F /* CarfaxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FA7326B3DFA300BE570F /* CarfaxService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		15B6FA5C26B3DD3200BE570F /* CarfaxListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarfaxListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B6FA6026B3DD3200BE570F /* CarfaxListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarfaxListUITests.swift; sourceTree = "<group>"; };
 		15B6FA6226B3DD3200BE570F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15B6FA7126B3DF6200BE570F /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		15B6FA7326B3DFA300BE570F /* CarfaxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarfaxService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,9 @@
 		15B6FA4226B3DD2900BE570F /* CarfaxList */ = {
 			isa = PBXGroup;
 			children = (
+				15B6FA6F26B3DF3100BE570F /* Helpers */,
+				15B6FA7026B3DF4000BE570F /* Services */,
+				15B6FA6E26B3DE9600BE570F /* Model */,
 				15B6FA4326B3DD2900BE570F /* CarfaxListApp.swift */,
 				15B6FA4526B3DD2900BE570F /* ContentView.swift */,
 				15B6FA4726B3DD3100BE570F /* Assets.xcassets */,
@@ -128,6 +135,29 @@
 				15B6FA6226B3DD3200BE570F /* Info.plist */,
 			);
 			path = CarfaxListUITests;
+			sourceTree = "<group>";
+		};
+		15B6FA6E26B3DE9600BE570F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15B6FA6F26B3DF3100BE570F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				15B6FA7126B3DF6200BE570F /* HTTPManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		15B6FA7026B3DF4000BE570F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				15B6FA7326B3DFA300BE570F /* CarfaxService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B6FA7426B3DFA300BE570F /* CarfaxService.swift in Sources */,
 				15B6FA4626B3DD2900BE570F /* ContentView.swift in Sources */,
+				15B6FA7226B3DF6200BE570F /* HTTPManager.swift in Sources */,
 				15B6FA4426B3DD2900BE570F /* CarfaxListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
