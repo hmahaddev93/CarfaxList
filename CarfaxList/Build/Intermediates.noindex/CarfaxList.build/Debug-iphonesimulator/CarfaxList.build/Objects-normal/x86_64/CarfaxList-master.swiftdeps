@@ -1,8 +1,10 @@
 version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
 options: "eca9ef5fb84f868b3fe8fd1e88649db0"
-build_time: [1627629604, 332220000]
+build_time: [1627633522, 596766000]
 inputs:
-  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Services/CarfaxService.swift": [9223372036, 854775807]
-  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/ContentView.swift": [1627629049, 969270676]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Services/CarfaxService.swift": [1627633234, 846869713]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/VehicleListView.swift": [1627631172, 44132508]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Models/Dealer.swift": [1627632883, 115489785]
   "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Helpers/HTTPManager.swift": [1627629576, 829352375]
-  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/CarfaxListApp.swift": [1627629050, 68843354]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Models/Vehicle.swift": [1627633520, 971277815]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/CarfaxListApp.swift": [1627630951, 853962274]
