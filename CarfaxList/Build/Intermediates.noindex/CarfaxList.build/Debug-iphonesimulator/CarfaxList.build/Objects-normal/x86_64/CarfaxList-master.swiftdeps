@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
+options: "eca9ef5fb84f868b3fe8fd1e88649db0"
+build_time: [1627628989, 445690000]
+inputs:
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/ContentView.swift": [1627628969, 681903541]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/CarfaxListApp.swift": [1627628969, 674505719]
