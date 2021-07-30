@@ -12,6 +12,7 @@ import UIKit
 struct CarfaxListApp: App {
     
     init() {
+        // Clear all download cache
         URLCache.shared.removeAllCachedResponses()
     }
     

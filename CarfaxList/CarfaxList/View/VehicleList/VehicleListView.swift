@@ -22,6 +22,11 @@ struct VehicleListView: View {
         .onAppear {
             viewModel.fetchVehicles()
         }
+        .alert(isPresented: viewModel.isPresentingAlert, content: {
+            Alert(title: Text("Error"),
+                  message: Text(viewModel.activeError!.localizedDescription),
+                  dismissButton: .cancel())
+        })
         .background(Color.white95)
     }
 }
