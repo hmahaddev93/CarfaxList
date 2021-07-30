@@ -18,7 +18,7 @@ protocol CarfaxAPI_Protocol {
     func fetchSampleListing(completion: @escaping (Result<[Vehicle], Error>) -> Void)
 }
 
-class CarfaxService: CarfaxAPI_Protocol {
+final class CarfaxService: CarfaxAPI_Protocol {
     
     private let httpManager: HTTPManager
     private let jsonDecoder: JSONDecoder

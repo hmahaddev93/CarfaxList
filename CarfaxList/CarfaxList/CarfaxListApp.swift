@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import UIKit
 
 @main
 struct CarfaxListApp: App {
+    
+    init() {
+        URLCache.shared.removeAllCachedResponses()
+    }
+    
     var body: some Scene {
         WindowGroup {
             VehicleListView()

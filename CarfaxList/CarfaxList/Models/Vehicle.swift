@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Vehicle: Codable {
+struct Vehicle: Codable, Identifiable {
+    let id: String
     let year: Int
     let make: String
     let model: String
