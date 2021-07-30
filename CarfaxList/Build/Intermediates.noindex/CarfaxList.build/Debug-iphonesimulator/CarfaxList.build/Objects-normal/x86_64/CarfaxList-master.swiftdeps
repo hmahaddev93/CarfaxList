@@ -1,17 +1,17 @@
 version: "Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)"
 options: "eca9ef5fb84f868b3fe8fd1e88649db0"
-build_time: [1627655590, 858736000]
+build_time: [1627667451, 6309000]
 inputs:
   "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Helpers/AsyncImage/ImageCache.swift": [1627636899, 890014993]
   "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Helpers/AsyncImage/AsyncImage.swift": [1627641897, 161544005]
   "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Helpers/AsyncImage/ImageLoader.swift": [1627636899, 863835198]
   "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Services/CarfaxService.swift": [1627634002, 965750868]
-  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Helpers/Color+Custom.swift": [1627638235, 539680287]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Helpers/Color+Custom.swift": [1627667444, 477384231]
   "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/View/VehicleList/VehicleListView.swift": [1627655553, 730634150]
   "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/View/VehicleList/VehicleRowView.swift": [1627646371, 225347939]
-  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Models/Dealer.swift": [1627632883, 115489785]
-  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Helpers/HTTPManager.swift": [1627637272, 894766632]
-  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/View/VehicleList/VehicleListViewModel.swift": [1627655590, 568283156]
-  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Models/Vehicle.swift": [1627637910, 863394780]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Models/Dealer.swift": [1627667446, 489135283]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Helpers/HTTPManager.swift": [1627667445, 511676284]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/View/VehicleList/VehicleListViewModel.swift": [1627667448, 796360476]
+  "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Models/Vehicle.swift": [1627667447, 581358531]
   "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/CarfaxListApp.swift": [1627652563, 794278841]
   "/Users/zebra/Zla/Dev/hmahad_git_space/CarfaxList/CarfaxList/CarfaxList/Helpers/AsyncImage/EnvironmentValues+ImageCache.swift": [1627636899, 835427638]
