@@ -1,6 +1,0 @@
-Target dependency graph (3 targets)
-CarfaxList in CarfaxList
-CarfaxListTests in CarfaxList, depends on:
-CarfaxList in CarfaxList (explicit)
-CarfaxListUITests in CarfaxList, depends on:
-CarfaxList in CarfaxList (explicit)
