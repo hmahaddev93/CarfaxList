@@ -29,9 +29,16 @@ struct AsyncImage<Placeholder: View>: View {
     
     private var content: some View {
         Group {
-            if loader.image != nil {
-                image(loader.image!)
-                    .aspectRatio(contentMode: .fit)
+            if let downloaded = loader.image {
+                if downloaded.size.width > 10 && downloaded.size.height > 10 {
+                    image(downloaded)
+                        .aspectRatio(contentMode: .fit)
+                }
+                else {
+                    Text("No photo")
+                        .background(Color.gray)
+                        .padding()
+                }
             } else {
                 placeholder
             }

@@ -18,7 +18,9 @@ struct CarfaxListApp: App {
     
     var body: some Scene {
         WindowGroup {
+            let modalManager: PartialModalManager = PartialModalManager()
             VehicleListView()
+                .environmentObject(modalManager)
         }
     }
 }

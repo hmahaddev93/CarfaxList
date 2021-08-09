@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  CarfaxList
 //
-//  Created by Khateeb Mahad Hussain on 7/30/21.
+//  Created by Khateeb Mahad Hussain on 8/8/21.
 //
 
 import SwiftUI
@@ -10,11 +10,19 @@ import SwiftUI
 struct VehicleListView: View {
     
     @ObservedObject var viewModel:VehicleListViewModel = VehicleListViewModel()
+    @EnvironmentObject var partialModalManager: PartialModalManager
+
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 20) {
                 ForEach(viewModel.vehicles, id: \.id) { vehicle in
-                   VehicleRowView(vehicle: vehicle)
+                    VehicleRowView(vehicle: vehicle) { email in
+                        self.partialModalManager.showPartialModal({
+                             print("Send email modal dismissed")
+                        }) {
+                             SendEmailView(toEmail: email)
+                        }
+                    }
                 }
             }
             .padding(.top, 16)
@@ -28,6 +36,7 @@ struct VehicleListView: View {
                   dismissButton: .cancel())
         })
         .background(Color.white95)
+        .addPartialModal()
     }
 }
 

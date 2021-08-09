@@ -24,6 +24,13 @@
 		15B6FA8A26B3F6A200BE570F /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FA8926B3F6A200BE570F /* ImageLoader.swift */; };
 		15B6FA8C26B3F73000BE570F /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FA8B26B3F73000BE570F /* EnvironmentValues+ImageCache.swift */; };
 		15B6FA8E26B4014500BE570F /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B6FA8D26B4014500BE570F /* Color+Custom.swift */; };
+		15BE71B426C0D24F002A1A60 /* SendEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BE71B326C0D24F002A1A60 /* SendEmailView.swift */; };
+		15BE71C926C0DEDD002A1A60 /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BE71C326C0DEDD002A1A60 /* BlurEffectView.swift */; };
+		15BE71CA26C0DEDD002A1A60 /* PartialModalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BE71C426C0DEDD002A1A60 /* PartialModalManager.swift */; };
+		15BE71CB26C0DEDD002A1A60 /* View+DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BE71C526C0DEDD002A1A60 /* View+DeviceType.swift */; };
+		15BE71CC26C0DEDD002A1A60 /* PartialModalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BE71C626C0DEDD002A1A60 /* PartialModalStyle.swift */; };
+		15BE71CD26C0DEDD002A1A60 /* View+PartialModalModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BE71C726C0DEDD002A1A60 /* View+PartialModalModifier.swift */; };
+		15BE71CE26C0DEDD002A1A60 /* PartialModalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BE71C826C0DEDD002A1A60 /* PartialModalViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,13 @@
 		15B6FA8926B3F6A200BE570F /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		15B6FA8B26B3F73000BE570F /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
 		15B6FA8D26B4014500BE570F /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
+		15BE71B326C0D24F002A1A60 /* SendEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailView.swift; sourceTree = "<group>"; };
+		15BE71C326C0DEDD002A1A60 /* BlurEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffectView.swift; sourceTree = "<group>"; };
+		15BE71C426C0DEDD002A1A60 /* PartialModalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialModalManager.swift; sourceTree = "<group>"; };
+		15BE71C526C0DEDD002A1A60 /* View+DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+DeviceType.swift"; sourceTree = "<group>"; };
+		15BE71C626C0DEDD002A1A60 /* PartialModalStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialModalStyle.swift; sourceTree = "<group>"; };
+		15BE71C726C0DEDD002A1A60 /* View+PartialModalModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+PartialModalModifier.swift"; sourceTree = "<group>"; };
+		15BE71C826C0DEDD002A1A60 /* PartialModalViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialModalViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +172,7 @@
 		15B6FA6F26B3DF3100BE570F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				15BE71C226C0DEDD002A1A60 /* PartialModal */,
 				15B6FA8426B3F60500BE570F /* AsyncImage */,
 				15B6FA7126B3DF6200BE570F /* HTTPManager.swift */,
 				15B6FA8D26B4014500BE570F /* Color+Custom.swift */,
@@ -196,6 +211,7 @@
 				15B6FA4526B3DD2900BE570F /* VehicleListView.swift */,
 				15B6FA7C26B3F06100BE570F /* VehicleListViewModel.swift */,
 				15B6FA8026B3F30900BE570F /* VehicleRowView.swift */,
+				15BE71B326C0D24F002A1A60 /* SendEmailView.swift */,
 			);
 			path = VehicleList;
 			sourceTree = "<group>";
@@ -209,6 +225,19 @@
 				15B6FA8B26B3F73000BE570F /* EnvironmentValues+ImageCache.swift */,
 			);
 			path = AsyncImage;
+			sourceTree = "<group>";
+		};
+		15BE71C226C0DEDD002A1A60 /* PartialModal */ = {
+			isa = PBXGroup;
+			children = (
+				15BE71C426C0DEDD002A1A60 /* PartialModalManager.swift */,
+				15BE71C826C0DEDD002A1A60 /* PartialModalViewModifier.swift */,
+				15BE71C626C0DEDD002A1A60 /* PartialModalStyle.swift */,
+				15BE71C726C0DEDD002A1A60 /* View+PartialModalModifier.swift */,
+				15BE71C526C0DEDD002A1A60 /* View+DeviceType.swift */,
+				15BE71C326C0DEDD002A1A60 /* BlurEffectView.swift */,
+			);
+			path = PartialModal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,14 +374,21 @@
 				15B6FA8A26B3F6A200BE570F /* ImageLoader.swift in Sources */,
 				15B6FA7426B3DFA300BE570F /* CarfaxService.swift in Sources */,
 				15B6FA8E26B4014500BE570F /* Color+Custom.swift in Sources */,
+				15BE71B426C0D24F002A1A60 /* SendEmailView.swift in Sources */,
 				15B6FA4626B3DD2900BE570F /* VehicleListView.swift in Sources */,
+				15BE71CB26C0DEDD002A1A60 /* View+DeviceType.swift in Sources */,
 				15B6FA8126B3F30900BE570F /* VehicleRowView.swift in Sources */,
 				15B6FA7926B3EA2200BE570F /* Dealer.swift in Sources */,
+				15BE71CA26C0DEDD002A1A60 /* PartialModalManager.swift in Sources */,
 				15B6FA7226B3DF6200BE570F /* HTTPManager.swift in Sources */,
 				15B6FA7D26B3F06100BE570F /* VehicleListViewModel.swift in Sources */,
+				15BE71CC26C0DEDD002A1A60 /* PartialModalStyle.swift in Sources */,
 				15B6FA7726B3E2FB00BE570F /* Vehicle.swift in Sources */,
 				15B6FA4426B3DD2900BE570F /* CarfaxListApp.swift in Sources */,
+				15BE71CD26C0DEDD002A1A60 /* View+PartialModalModifier.swift in Sources */,
+				15BE71CE26C0DEDD002A1A60 /* PartialModalViewModifier.swift in Sources */,
 				15B6FA8C26B3F73000BE570F /* EnvironmentValues+ImageCache.swift in Sources */,
+				15BE71C926C0DEDD002A1A60 /* BlurEffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

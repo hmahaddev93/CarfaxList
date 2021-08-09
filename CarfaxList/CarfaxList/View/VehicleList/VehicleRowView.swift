@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VehicleRowView: View {
     let vehicle: Vehicle
+    var sendEmailHandler: ((_ toEmail: String) -> Void)? = nil
     var body: some View {
         VStack(spacing: 12) {
             
@@ -17,7 +18,7 @@ struct VehicleRowView: View {
                 AsyncImage(
                     url: url,
                     placeholder: {
-                        Text("Loading photo...")
+                        Text("Loading...")
                             .padding()
                             .foregroundColor(.blue)
                     },
@@ -30,6 +31,7 @@ struct VehicleRowView: View {
             else {
                 Text("No photo")
                     .background(Color.gray)
+                    .padding()
             }
             
             HStack  {
@@ -50,16 +52,29 @@ struct VehicleRowView: View {
             }
             .padding(.horizontal, 12)
 
-            Button(action: {
-                let telephoneLinkString = "tel://\(vehicle.dealer.phone)"
-                guard let url = URL(string: telephoneLinkString) else { return }
-                UIApplication.shared.open(url)
-            }) {
-                Text("Call " + vehicle.dealer.phone)
-                    .font(.system(size: 14, weight: .semibold, design: .default))
-                    .foregroundColor(.blue)
+            HStack {
+                Button(action: {
+                    let telephoneLinkString = "tel://\(vehicle.dealer.phone)"
+                    guard let url = URL(string: telephoneLinkString) else { return }
+                    UIApplication.shared.open(url)
+                }) {
+                    Text("Phone Call")
+                        .font(.system(size: 14, weight: .semibold, design: .default))
+                        .foregroundColor(.blue)
+                }
+                .padding(.leading, 16)
+                .padding(.vertical, 16)
+                Spacer()
+                Button(action: {
+                    sendEmailHandler?("contactus@carfax.com")
+                }) {
+                    Text("Send Email")
+                        .font(.system(size: 14, weight: .semibold, design: .default))
+                        .foregroundColor(.blue)
+                }
+                .padding(.trailing, 16)
+                .padding(.vertical, 16)
             }
-            .padding(.vertical, 16)
 
         }
         .background(Color.white)
